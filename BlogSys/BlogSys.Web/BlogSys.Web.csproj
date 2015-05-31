@@ -164,7 +164,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -224,6 +223,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSys.Data\BlogSys.Data.csproj">
+      <Project>{8fadc485-469b-4286-9b19-1ca930226221}</Project>
+      <Name>BlogSys.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogSys.Models\BlogSys.Models.csproj">
+      <Project>{0492f15d-ba1c-4da2-840f-d7e0f146760c}</Project>
+      <Name>BlogSys.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
